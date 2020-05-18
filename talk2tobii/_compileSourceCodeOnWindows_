@@ -1,0 +1,12 @@
+For Developers only:
+
+The source code contains the libtobii.a, the source code talk2tobii_vT10.cpp and the header files. In windows you should replace libtobii.a with the tet.dll.
+
+The next step you need to do is to create a simple program that it will call some standard function of the tet library. This is just to check that the tet.dll contains the same functions in windows as in linux. Hopefully they should be very similar, they should have the same name and called with similar parameters. This testing is very important. It will determine whether the idea will work or not!
+
+You need to check whether you can call functions like:
+Tet_Init
+Tet_Connect
+Tet_Start
+
+I think these are the main function that you need to check first. For example if Tet_start works ok then you should see the tobii's infrared light on.
